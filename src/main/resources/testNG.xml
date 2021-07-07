@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mail.rambler.ru" >
+    <test name="SuccessfullLoginTest">
+        <classes>
+            <class name="Tests.SuccessfullLoginTest"></class>
+        </classes>
+    </test>
+    <test name="SaveNewLetterAsDraftTest">
+        <classes>
+            <class name="Tests.SaveNewLetterAsDraftTest"></class>
+        </classes>
+    </test>
+    <test name="ValidateJustCreatedDraftLetterTest">
+        <classes>
+            <class name="Tests.ValidateJustCreatedDraftLetterTest"></class>
+        </classes>
+    </test>
+    <test name="SendEmailTest">
+        <classes>
+            <class name="Tests.SendEmailTest"></class>
+        </classes>
+    </test>
+    <test name="ValidateJustSentLetterIsInSentFolderTest">
+        <classes>
+            <class name="Tests.ValidateJustSentLetterIsInSentFolder"></class>
+        </classes>
+    </test>
+    <test name="SuccessfullLogOutTest">
+        <classes>
+            <class name="Tests.SuccessfullLogOutTest"></class>
+        </classes>
+    </test>
+</suite>
