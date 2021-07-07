@@ -65,5 +65,6 @@ public class SuccessfullLoginTest {
                 .WBDw8(driver,"//iframe[@style='height:0;width:0;border:0;position:absolute;left:-10000px;top:-1000px;']")
                 .click(saveAsDraftBtn)
                 .getTextValue(draftsBtn);
+                asd
         char[] x2 = x.toCharArray();
         System.out.println(x2[x2.length-1]); //дождаться обновления количества писем*/
