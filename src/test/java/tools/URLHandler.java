@@ -1,5 +1,6 @@
-package Pages;
+package tools;
 
+import Pages.BasePage;
 import org.openqa.selenium.WebDriver;
 
 public class URLHandler {

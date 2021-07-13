@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,15 +8,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
+import tools.PagesCreater;
+import tools.URLHandler;
 
 import static Pages.HomePage.sportBtn;
 
 public class BasePage {
     public static final String HOMEPAGE_URL = "https://mail.rambler.ru/";
-    public static final String EMAIL = "forselenium@rambler.ru";
-    public static final String PASSWORD = "Forselenium123";
     public static final int TIME_OUT = 10;
     public static String parent;
     protected WebDriver driver;
@@ -27,10 +26,6 @@ public class BasePage {
 
     public BasePage openHomePage() {
         driver.get(HOMEPAGE_URL);
-        //Thread.sleep(3000);
-        /*new WebDriverWait(driver,TIME_OUT)
-                .until(ExpectedConditions
-                        .presenceOfElementLocated(By.xpath("//iframe[contains(@src,'id.rambler.ru/login')]")));*/
         WBDw82(driver, "//iframe[contains(@src,'id.rambler.ru/login')]");
         new URLHandler().getDefaultURL(driver);
         return new PagesCreater().createPage(driver, driver.getCurrentUrl());
@@ -93,6 +88,12 @@ public class BasePage {
 
     public BasePage refreshPage() {
         return new URLHandler().checkPagePresent(this, this.driver);
+    }
+
+    public BasePage closeAllert() {
+        Alert alert = (new WebDriverWait(this.driver,TIME_OUT).until(ExpectedConditions.alertIsPresent()));
+        driver.switchTo().alert().dismiss();
+        return this;
     }
 
 }
