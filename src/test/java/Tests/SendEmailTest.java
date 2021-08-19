@@ -45,18 +45,21 @@ public class SendEmailTest {
                 .WBDw82(driver,"//button[@data-compose-button='top-send']")
                 .click(sendBtn)
                 .WBDw82(driver,"//header[text()='Письмо отправлено']")
+                .click(draftsBtn)
                 .getTextValue(draftsBtn);
         char[] aVBA2 = tempTextValue2.toCharArray();
         char actualValueAfterActions = aVBA2[aVBA2.length-1];
         if(!Character.isDigit(actualValueAfterActions)) {
             actualValueAfterActions = '0';
         }
-        System.out.println(actualValueBeforeActions);
-        System.out.println(actualValueAfterActions);
+
         int before = Integer.parseInt(String.valueOf(actualValueBeforeActions));
         int after = Integer.parseInt(String.valueOf(actualValueAfterActions));
 
-        Assert.assertTrue(before==after+1);
+        System.out.println("before:"+before);
+        System.out.println("after:"+after);
+
+        Assert.assertEquals(before,after+1);
     }
 
     @AfterMethod

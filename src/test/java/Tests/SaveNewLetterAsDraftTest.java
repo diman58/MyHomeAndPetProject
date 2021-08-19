@@ -41,7 +41,8 @@ public class SaveNewLetterAsDraftTest {
 
         int before = Integer.parseInt(String.valueOf(actualValueBeforeActions));
         int after = Integer.parseInt(String.valueOf(actualValueAfterActions));
-        Assert.assertTrue(before==after-1);
+
+        Assert.assertEquals(before,after-1);
     }
 
     @AfterMethod
