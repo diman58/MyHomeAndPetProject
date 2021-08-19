@@ -26,16 +26,15 @@ public class ValidateJustSentLetterIsInSentFolder {
     public void validateJustSentLetter() {
         BasePage tempPage = LogInSteps.login(driver)
                 .click(sentBox)
-                .WBDw82(driver,"//span[@class='MailListItem-sender-1G']");
+                .WBDw82(driver,"//a[contains(@class,'ListItem-root')]");
 
         String actualReceiver = tempPage.getTextValue(lastSentLetterReceiver);
         actualReceiver = actualReceiver + "@gmail.com";
-
+        System.out.println(actualReceiver);
         String actualSubject = tempPage.getTextValue(lastSentLetterSubject);
-
+        System.out.println(actualSubject);
         String actualBodyValue = tempPage.getTextValue(lastSentBodyValue);
-
-        actualBodyValue = actualBodyValue.substring(actualSubject.length());
+        System.out.println(actualBodyValue);
 
         Assert.assertSame(actualReceiver, Letter.getReceiversFieldValue(), "wrong receiver");
         Assert.assertSame(actualSubject, Letter.getSubjectFieldValue(), "wrong subject");

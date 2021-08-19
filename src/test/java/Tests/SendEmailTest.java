@@ -37,7 +37,7 @@ public class SendEmailTest {
 
         String tempTextValue2 =
                 tempPage.click(draftsBtn)
-                .WBDw82(driver,"//span[@class='MailListItem-sender-1G']")
+                .WBDw82(driver,"//div[contains(@class,'ListItem-sender')]")
                 .click(lastDraftLetterReceiver)
                 .click(editBtn)
                 .WBDw8(driver,"//p[text()='Новое сообщение']")
@@ -53,7 +53,10 @@ public class SendEmailTest {
         }
         System.out.println(actualValueBeforeActions);
         System.out.println(actualValueAfterActions);
-        Assert.assertTrue(actualValueBeforeActions==actualValueAfterActions+1);
+        int before = Integer.parseInt(String.valueOf(actualValueBeforeActions));
+        int after = Integer.parseInt(String.valueOf(actualValueAfterActions));
+
+        Assert.assertTrue(before==after+1);
     }
 
     @AfterMethod

@@ -17,12 +17,12 @@ public class DraftBoxPage extends BasePage{
     @FindBy(xpath = "//a[@class='MailListItem-wrapper-3Q']")
     public static WebElement lastDraft;
 
-    @FindBy(xpath = "//span[@class='MailListItem-sender-1G']")
+    @FindBy(xpath = "//div[contains(@class,'ListItem-sender')]")
     public static WebElement lastDraftLetterReceiver;
 
-    @FindBy(xpath = "//span[contains(@class,'MailListItem-subject')]")
+    @FindBy(xpath = "//span[contains(@class,'ListItem-subject')]")
     public static WebElement lastDraftLetterSubject;
 
-    @FindBy(xpath = "//span[contains(@class,'MailListItem-snippet')]")
+    @FindBy(xpath = "//span[contains(@class,'ListItem-snippet')]")
     public static WebElement lastDraftBodyValue;
 }

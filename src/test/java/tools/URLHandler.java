@@ -8,8 +8,8 @@ public class URLHandler {
     public static String isURL;
     public BasePage checkPagePresent(BasePage basePage, WebDriver driver) {
         isURL = driver.getCurrentUrl();
-        if(isURL.contains("https://mail.rambler.ru/folder/DraftBox/DraftBox")){
-            isURL = isURL.substring(0,isURL.length()-4);
+        if(isURL.contains("https://mail.rambler.ru/folder/DraftBox/")){
+            isURL = "folderName=DraftBox";
             //System.out.println(isURL);
         }
         if(!isURL.equals(wasURL)) {

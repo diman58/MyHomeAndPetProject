@@ -11,12 +11,12 @@ public class SentBoxPage extends BasePage{
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(xpath = "//span[@class='MailListItem-sender-1G']")
+    @FindBy(xpath = "//div[contains(@class,'ListItem-sender')]")
     public static WebElement lastSentLetterReceiver;
 
-    @FindBy(xpath = "//span[contains(@class,'MailListItem-subject')]")
+    @FindBy(xpath = "//span[contains(@class,'ListItem-subject')]")
     public static WebElement lastSentLetterSubject;
 
-    @FindBy(xpath = "//span[contains(@class,'MailListItem-snippet')]")
+    @FindBy(xpath = "//span[contains(@class,'ListItem-snippet')]")
     public static WebElement lastSentBodyValue;
 }

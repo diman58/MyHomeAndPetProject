@@ -26,7 +26,7 @@ public class ValidateJustCreatedDraftLetterTest {
     public void validateJustCreatedDraftletter() {
         BasePage tempPage = LogInSteps.login(driver)
                 .click(draftsBtn)
-                .WBDw82(driver,"//span[@class='MailListItem-sender-1G']");
+                .WBDw82(driver,"//a[contains(@class,'ListItem-root')]");
 
         String actualReceiver = tempPage.getTextValue(lastDraftLetterReceiver);
         actualReceiver = actualReceiver + "@gmail.com";
@@ -34,7 +34,6 @@ public class ValidateJustCreatedDraftLetterTest {
         String actualSubject = tempPage.getTextValue(lastDraftLetterSubject);
 
         String actualBodyValue = tempPage.getTextValue(lastDraftBodyValue);
-        actualBodyValue = actualBodyValue.substring(actualSubject.length());
 
         Assert.assertSame(actualReceiver, Letter.getReceiversFieldValue(), "wrong receiver");
         Assert.assertSame(actualSubject,Letter.getSubjectFieldValue(), "wrong subject");
