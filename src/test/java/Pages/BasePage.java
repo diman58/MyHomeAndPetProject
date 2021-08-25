@@ -13,7 +13,7 @@ import tools.URLHandler;
 
 import static Pages.HomePage.sportBtn;
 
-public class BasePage {
+public abstract class BasePage {
     public static final String HOMEPAGE_URL = "https://mail.rambler.ru/";
     public static final int TIME_OUT = 10;
     public static String parent;
