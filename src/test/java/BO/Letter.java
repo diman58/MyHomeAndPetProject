@@ -11,6 +11,18 @@ public class Letter implements CustomLetter {
         return receiversFieldValue;
     }
 
+    public static void setReceiversFieldValue(String receiversFieldValue) {
+        Letter.receiversFieldValue = receiversFieldValue;
+    }
+
+    public static void setSubjectFieldValue(String subjectFieldValue) {
+        Letter.subjectFieldValue = subjectFieldValue;
+    }
+
+    public static void setBodyOfLetterFieldValue(String bodyOfLetterFieldValue) {
+        Letter.bodyOfLetterFieldValue = bodyOfLetterFieldValue;
+    }
+
     public static String getSubjectFieldValue() {
         return subjectFieldValue;
     }
