@@ -4,7 +4,7 @@ import BO.Letter;
 import Pages.BasePage;
 import Pages.HomePage;
 import org.openqa.selenium.WebDriver;
-import tools.CustomLetter;
+
 
 import static Pages.HomePage.draftsBtn;
 import static Pages.HomePage.writeLetterBtn;

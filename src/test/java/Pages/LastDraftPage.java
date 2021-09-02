@@ -13,4 +13,5 @@ public class LastDraftPage extends BasePage{
 
     @FindBy(xpath = "//span[contains(@class,'ButtonWithIcon-icon-1Q')]")
     public static WebElement editBtn;
+
 }
