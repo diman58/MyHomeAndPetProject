@@ -1,6 +1,7 @@
 package Tests;
 
 import Steps.LogInSteps;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -21,7 +22,7 @@ public class SuccessfullLogOutTest {
         driver = DriverManager.getDriver();
     }
 
-    @Test
+    @Test(description = "NTCNFKBRGJ")
     public void logOut() {
         LogInSteps.login(driver)
                 .refreshPage()

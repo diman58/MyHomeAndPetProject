@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="mail.rambler.ru" duration-ms="110702" started-at="2021-07-10T15:40:02 MSK" finished-at="2021-07-10T15:41:53 MSK">
+    <groups>
+    </groups>
+    <test name="SuccessfullLoginTest" duration-ms="26268" started-at="2021-07-10T15:40:02 MSK" finished-at="2021-07-10T15:40:29 MSK">
+      <class name="Tests.SuccessfullLoginTest">
+        <test-method status="PASS" signature="browserSetUp()[pri:0, instance:Tests.SuccessfullLoginTest@15975490]" name="browserSetUp" is-config="true" duration-ms="1782" started-at="2021-07-10T15:40:02 MSK" finished-at="2021-07-10T15:40:04 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:Tests.SuccessfullLoginTest@15975490]" name="loginTest" duration-ms="23752" started-at="2021-07-10T15:40:04 MSK" finished-at="2021-07-10T15:40:28 MSK">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EPRUPETW06F7', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\DMITRI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a32786c4cf5391040a8cd9ea54d0f08]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EPRUPETW06F7', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\DMITRI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a32786c4cf5391040a8cd9ea54d0f08
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Pages.BasePage.closeAllert(BasePage.java:94)
+at Tests.SuccessfullLoginTest.loginTest(SuccessfullLoginTest.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at TestRunner.main(TestRunner.java:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:Tests.SuccessfullLoginTest@15975490]" name="browserTearDown" is-config="true" duration-ms="684" started-at="2021-07-10T15:40:28 MSK" finished-at="2021-07-10T15:40:29 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTearDown -->
+      </class> <!-- Tests.SuccessfullLoginTest -->
+    </test> <!-- SuccessfullLoginTest -->
+    <test name="SaveNewLetterAsDraftTest" duration-ms="13185" started-at="2021-07-10T15:40:29 MSK" finished-at="2021-07-10T15:40:42 MSK">
+      <class name="Tests.SaveNewLetterAsDraftTest">
+        <test-method status="PASS" signature="browserSetUp()[pri:0, instance:Tests.SaveNewLetterAsDraftTest@396a51ab]" name="browserSetUp" is-config="true" duration-ms="1149" started-at="2021-07-10T15:40:29 MSK" finished-at="2021-07-10T15:40:30 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+        <test-method status="PASS" signature="saveAsDraft()[pri:0, instance:Tests.SaveNewLetterAsDraftTest@396a51ab]" name="saveAsDraft" duration-ms="11382" started-at="2021-07-10T15:40:30 MSK" finished-at="2021-07-10T15:40:41 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAsDraft -->
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:Tests.SaveNewLetterAsDraftTest@396a51ab]" name="browserTearDown" is-config="true" duration-ms="652" started-at="2021-07-10T15:40:41 MSK" finished-at="2021-07-10T15:40:42 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTearDown -->
+      </class> <!-- Tests.SaveNewLetterAsDraftTest -->
+    </test> <!-- SaveNewLetterAsDraftTest -->
+    <test name="ValidateJustCreatedDraftLetterTest" duration-ms="11932" started-at="2021-07-10T15:40:42 MSK" finished-at="2021-07-10T15:40:54 MSK">
+      <class name="Tests.ValidateJustCreatedDraftLetterTest">
+        <test-method status="PASS" signature="browserSetUp()[pri:0, instance:Tests.ValidateJustCreatedDraftLetterTest@735b5592]" name="browserSetUp" is-config="true" duration-ms="1127" started-at="2021-07-10T15:40:42 MSK" finished-at="2021-07-10T15:40:43 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+        <test-method status="PASS" signature="validateJustCreatedDraftletter()[pri:0, instance:Tests.ValidateJustCreatedDraftLetterTest@735b5592]" name="validateJustCreatedDraftletter" duration-ms="10097" started-at="2021-07-10T15:40:43 MSK" finished-at="2021-07-10T15:40:53 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateJustCreatedDraftletter -->
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:Tests.ValidateJustCreatedDraftLetterTest@735b5592]" name="browserTearDown" is-config="true" duration-ms="708" started-at="2021-07-10T15:40:53 MSK" finished-at="2021-07-10T15:40:54 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTearDown -->
+      </class> <!-- Tests.ValidateJustCreatedDraftLetterTest -->
+    </test> <!-- ValidateJustCreatedDraftLetterTest -->
+    <test name="SendEmailTest" duration-ms="27413" started-at="2021-07-10T15:40:54 MSK" finished-at="2021-07-10T15:41:21 MSK">
+      <class name="Tests.SendEmailTest">
+        <test-method status="PASS" signature="browserSetUp()[pri:0, instance:Tests.SendEmailTest@d2cc05a]" name="browserSetUp" is-config="true" duration-ms="1181" started-at="2021-07-10T15:40:54 MSK" finished-at="2021-07-10T15:40:55 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+        <test-method status="FAIL" signature="sendEmail()[pri:0, instance:Tests.SendEmailTest@d2cc05a]" name="sendEmail" duration-ms="25529" started-at="2021-07-10T15:40:55 MSK" finished-at="2021-07-10T15:41:21 MSK">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //header[text()='Письмо отправлено'] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //header[text()='Письмо отправлено'] (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Pages.BasePage.WBDw82(BasePage.java:68)
+at Tests.SendEmailTest.sendEmail(SendEmailTest.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at TestRunner.main(TestRunner.java:19)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//header[text()='Письмо отправлено']"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EPRUPETW06F7', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\DMITRI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f7a0c26f811f5867ebce985e56856c40
+*** Element info: {Using=xpath, value=//header[text()='Письмо отправлено']}
+at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmail -->
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:Tests.SendEmailTest@d2cc05a]" name="browserTearDown" is-config="true" duration-ms="695" started-at="2021-07-10T15:41:21 MSK" finished-at="2021-07-10T15:41:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTearDown -->
+      </class> <!-- Tests.SendEmailTest -->
+    </test> <!-- SendEmailTest -->
+    <test name="ValidateJustSentLetterIsInSentFolderTest" duration-ms="15236" started-at="2021-07-10T15:41:21 MSK" finished-at="2021-07-10T15:41:36 MSK">
+      <class name="Tests.ValidateJustSentLetterIsInSentFolder">
+        <test-method status="PASS" signature="browserSetUp()[pri:0, instance:Tests.ValidateJustSentLetterIsInSentFolder@2a2d45ba]" name="browserSetUp" is-config="true" duration-ms="1215" started-at="2021-07-10T15:41:21 MSK" finished-at="2021-07-10T15:41:22 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+        <test-method status="PASS" signature="validateJustSentLetter()[pri:0, instance:Tests.ValidateJustSentLetterIsInSentFolder@2a2d45ba]" name="validateJustSentLetter" duration-ms="13329" started-at="2021-07-10T15:41:22 MSK" finished-at="2021-07-10T15:41:36 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateJustSentLetter -->
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:Tests.ValidateJustSentLetterIsInSentFolder@2a2d45ba]" name="browserTearDown" is-config="true" duration-ms="692" started-at="2021-07-10T15:41:36 MSK" finished-at="2021-07-10T15:41:36 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTearDown -->
+      </class> <!-- Tests.ValidateJustSentLetterIsInSentFolder -->
+    </test> <!-- ValidateJustSentLetterIsInSentFolderTest -->
+    <test name="SuccessfullLogOutTest" duration-ms="16577" started-at="2021-07-10T15:41:36 MSK" finished-at="2021-07-10T15:41:53 MSK">
+      <class name="Tests.SuccessfullLogOutTest">
+        <test-method status="PASS" signature="browserSetUp()[pri:0, instance:Tests.SuccessfullLogOutTest@675d3402]" name="browserSetUp" is-config="true" duration-ms="1276" started-at="2021-07-10T15:41:36 MSK" finished-at="2021-07-10T15:41:38 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:Tests.SuccessfullLogOutTest@675d3402]" name="logOut" duration-ms="14624" started-at="2021-07-10T15:41:38 MSK" finished-at="2021-07-10T15:41:52 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:Tests.SuccessfullLogOutTest@675d3402]" name="browserTearDown" is-config="true" duration-ms="675" started-at="2021-07-10T15:41:52 MSK" finished-at="2021-07-10T15:41:53 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTearDown -->
+      </class> <!-- Tests.SuccessfullLogOutTest -->
+    </test> <!-- SuccessfullLogOutTest -->
+  </suite> <!-- mail.rambler.ru -->
+  <suite name="Default Suite" duration-ms="0" started-at="2021-07-10T15:41:53 MSK" finished-at="2021-07-10T15:41:53 MSK">
+    <groups>
+    </groups>
+  </suite> <!-- Default Suite -->
+</testng-results>

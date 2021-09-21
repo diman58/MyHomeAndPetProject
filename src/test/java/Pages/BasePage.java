@@ -1,5 +1,6 @@
 package Pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -85,7 +86,7 @@ public abstract class BasePage {
         new Actions(driver).moveToElement(sportBtn).moveByOffset(30,30).click().build().perform();
         return this;
     }
-
+    @Step("refresh")
     public BasePage refreshPage() {
         return new URLHandler().checkPagePresent(this, this.driver);
     }
